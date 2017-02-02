@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/final.css">
+    <meta charset="utf-8">
+    <title> About Brittany! </title>
+</head>
+<body>
+        <header class="wrapper">
+            <h1 class="page-title"> Brittany!</h1>
+        <nav class="nav wrapper">
+            <ul>
+                <li><a href="index.html">About Me!</a></li>
+                <li><a href="Resume.html">Resume!</a></li>
+                <li><a href="Gallery.html">Family Gallery!</a></li>
+                <li><a href="Projects.html">My Personal Projects!</a></li>
+                <li><a href="Contact.html">Contact Me!</a></li>
+            </ul>
+        </nav>
+
+        <p class="header-description wrapper"> Hi! My name is Brittany and I created this page to use as my portfolio. It pretty much just gives a synospisis about my hobbies, life, and things I like to do. I figured this is the best way for people to get to know me and for me to practice my coding skills! Hope you enjoy the page and feel free to contact me with any questions and/concerns.</p></div></div>
+        </header>
+        <div class ="wrapper">
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Send email" />
+</form>                     
+</div>
+
+<div class="wrapper">
+<footer>
+    
+     <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="http://login.create.net/images/icons/user/facebook_40x40.png" border=0></a>
+
+    <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" border=0></a>
+
+    <a target="_blank" title="find us on Facebook" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0></a>
+
+    <a target="_blank" title="find us on Facebook" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on facebook" src="http://findicons.com/files/icons/819/social_me/64/linkedin.png" border=0 height="45" width="45"></a>
+
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+<!-- Make sure to include a form from java to recieve direct e-mails, also include linkedin accounts, facebook, instagram, github account, slack account --> 
+
+
+
+<!-- THe following may come in handy for an error message, put in samantha to see how it works! 
+ -->
+
+<!-- 
+function throwError(variableName) {
+    throw new Error(`${variableName} must be defined!`)
+}
+
+function add(a = throwError('a'),b = 0) {
+    return a + b;
+}
+
+console.log(add('1'));
+
+
+
+OR
+
+function add(a = throwError('a'),b = 0) {
+    if (typeof a === 'string') {
+        throw new Error('a must be a number')
+    }
+    return a + b;
+}
+
+console.log(add('1'));
+
+
+
+// getWeatherAdvice(2)
+
+function getWeatherAdvice(temp = throwError('temp')) {
+    if (typeof temp !== "number") {
+        throw new Error('temp is not a number')
+    }
+    
+    if (temp < 32) {
+        return "cold"
+    }
+    else if (temp >= 32 && temp < 90) {
+        return "normal"
+    }
+    else {
+        return "dead"
+    }
+}
+
+// console.log(getWeatherAdvice('a'));
+// console.log(getWeatherAdvice());
+console.log(getWeatherAdvice(100));
+
+
+
+
+
+
